@@ -13,8 +13,6 @@ export const Tablet = (props: JSX.IntrinsicElements['group']) => {
         material={materials.interior}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.screen.geometry}
         material={materials['Material.001']}
       />
