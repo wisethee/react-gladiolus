@@ -1,14 +1,25 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import { Fragment } from 'react';
+import { Leva } from 'leva';
+import { Canvas } from '@react-three/fiber';
+import Scene from './components/scene/scene.component';
 
-export function App() {
+const App = () => {
   return (
-    <>
-      <NxWelcome title="gladiolus" />
-      <div />
-    </>
+    <Fragment>
+      <Leva collapsed />
+      <Canvas
+        shadows
+        camera={{
+          fov: 60,
+          near: 0.1,
+          far: 200,
+          position: [-3, 2, 6],
+        }}
+      >
+        <Scene />
+      </Canvas>
+    </Fragment>
   );
-}
+};
 
 export default App;

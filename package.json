@@ -9,10 +9,14 @@
   },
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^9.40.0",
+    "@react-three/fiber": "^8.9.1",
+    "@types/three": "^0.144.0",
     "core-js": "^3.6.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "regenerator-runtime": "0.13.7",
+    "three": "^0.146.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -42,6 +46,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
+    "leva": "^0.9.34",
     "nx": "15.0.8",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
